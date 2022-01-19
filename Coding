@@ -1,0 +1,79 @@
+package Quiz3;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Question1 {
+
+	private static Scanner sc;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		sc = new Scanner (System.in);
+		int [] item = new int [5];
+		System.out.println("Welcome to the menu! Please press:");
+        System.out.println("(1) Accept\n(2) Display\n(3) Search\n(4) Sort\n");
+        
+         int menu = sc.nextInt();
+         acceptarray (item);
+      
+          switch (menu){
+              case 1:{
+            	  acceptarray (item);
+                  break;
+              }
+              
+              case 2:{
+            	  for (int i = 0; i <item.length;i++)  
+            			displayarray((i+1),item[i]);
+                  break;
+              }
+              
+              case 3:{
+                  System.out.print("Enter the number you want to search: ");
+          		  int find = sc.nextInt();
+                 	 
+          		search(item, find);
+                  break;
+              }
+              
+              case 4:{
+            		Sort(item) ;
+                  break;
+              }
+              
+              default :
+                System.out.println("Please try again.");
+          }
+	}
+
+	public static void acceptarray (int [] aa) {
+		sc = new Scanner (System.in);
+		System.out.println("Please enter 5 number.");
+		for (int j = 0;  j < aa.length; j++)  
+		aa[j] = sc.nextInt();
+	}
+	
+	public static void displayarray (int A, int B) {
+	     System.out.println("Number " + A + ": " + B);
+	}
+	
+	public static void search(int[ ] bb, int v) {
+		for (int j=-1; j < bb.length; j++) {
+			if(j == v) {
+				System.out.println("Seacrh found: " + bb[j]);
+				break;
+			}
+		}	
+		
+		if((v>4) || (v<0)) {
+			System.out.println("Search not found."); 
+		}
+	}
+		
+	public static void Sort (int[ ] cc) {
+		Arrays.sort(cc);  
+		System.out.println("Ascending order: ");  
+		for (int j = 0; j<cc.length; j++)   {       
+			System.out.println(cc[j]);   
+		}   
+	}
+}
+
