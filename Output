@@ -1,0 +1,81 @@
+Welcome to the menu! Please press:
+(1) Accept
+(2) Display
+(3) Search
+(4) Sort
+
+Your answer: 1
+Please enter 5 number.
+1
+2
+3
+4
+5
+
+
+Welcome to the menu! Please press:
+(1) Accept
+(2) Display
+(3) Search
+(4) Sort
+
+Your answer: 2
+Please enter 5 number.
+1
+2
+3
+4
+5
+Number 1: 1
+Number 2: 2
+Number 3: 3
+Number 4: 4
+Number 5: 5
+
+
+Welcome to the menu! Please press:
+(1) Accept
+(2) Display
+(3) Search
+(4) Sort
+
+Your answer: 3
+Please enter 5 number.
+12
+23
+45
+56
+78
+Number 1: 12
+Number 2: 23
+Number 3: 45
+Number 4: 56
+Number 5: 78
+Enter the number you want to search (0-4): 4
+Seacrh found: 78
+
+
+Welcome to the menu! Please press:
+(1) Accept
+(2) Display
+(3) Search
+(4) Sort
+
+Your answer: 4
+Please enter 5 number.
+32
+78
+95
+64
+100
+Number 1: 32
+Number 2: 78
+Number 3: 95
+Number 4: 64
+Number 5: 100
+Ascending order: 
+32
+64
+78
+95
+100
